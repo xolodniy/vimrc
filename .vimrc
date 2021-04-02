@@ -36,6 +36,9 @@ set number
 set hlsearch
 set incsearch
 
+" disable error bell songs
+set belloff=all 
+
 " Отключение чувствительности к регистру при поиске
 set ignorecase
 set smartcase
