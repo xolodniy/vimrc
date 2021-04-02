@@ -1,3 +1,7 @@
+" install plug-manager:
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" vim > :PlugInstall
+
 call plug#begin('~/.vim/plugged')
 " Плагин для отображения дерева файлов ( на ctrl+N )
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -38,6 +42,9 @@ set smartcase
 let g:EasyMotion_smartcase = 1 " чтоб работало и в easymotion
 let g:EasyMotion_use_smartsign_us = 1 " 1==1 && 1==! в easymotion
 
+  " \+\+s = search by symbol on page
+ nmap s <Plug>(easymotion-s2)
+ 
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 set background=dark
