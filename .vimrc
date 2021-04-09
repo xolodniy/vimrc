@@ -11,7 +11,7 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 " cd ~/.vim/bundle/YouCompleteMe
 " ./install.py --go-completer
 " Плагин для автодополнения
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
 " Плагин для создания парных скобочек
 Plug 'jiangmiao/auto-pairs'
