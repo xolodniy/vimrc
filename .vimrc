@@ -37,7 +37,11 @@ set hlsearch
 set incsearch
 
 " disable error bell songs
-set belloff=all 
+ "set belloff=all - does not work sometimes
+  set noerrorbells visualbell t_vb=
+  if has('autocmd')
+        autocmd GUIEnter * set visualbell t_vb=
+    endif
 
 " Отключение чувствительности к регистру при поиске
 set ignorecase
